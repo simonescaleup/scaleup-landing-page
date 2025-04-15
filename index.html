@@ -2,120 +2,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScaleUp Partners</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #ffffff;
-            color: #000000;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            background-color: #f0f0f0;
-        }
-        header img {
-            height: 40px;
-        }
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-            background-color: #e6f2ff;
-        }
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 1.2em;
-            max-width: 600px;
-            margin: 0 auto 30px;
-        }
-        .hero a.button {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #009fe3;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-        }
-        .section {
-            padding: 60px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        .section h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        .section img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        .testimonial {
-            background-color: #f8f8f8;
-            padding: 20px;
-            margin: 20px 0;
-            border-left: 4px solid #009fe3;
-        }
-        footer {
-            background-color: #000000;
-            color: #ffffff;
-            text-align: center;
-            padding: 30px 20px;
-        }
-        .mission, .why-join, .testimonials {
-            margin-top: 40px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ScaleUp Partners</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #fff;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header img {
+      height: 40px;
+    }
+    .banner {
+      background: #87ceeb;
+      color: #000;
+      padding: 10px 20px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .section {
+      padding: 20px;
+    }
+    .founder-img {
+      width: 300px;
+      border-radius: 10px;
+    }
+    .button {
+      display: inline-block;
+      background: #00bfff;
+      color: #fff;
+      padding: 12px 20px;
+      margin: 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .testimonials {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .stars {
+      color: gold;
+    }
+    .faq {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .faq-item {
+      margin-bottom: 15px;
+    }
+    .faq-title {
+      cursor: pointer;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+    .faq-title::after {
+      content: ' ▼';
+      margin-left: 5px;
+    }
+    .faq-answer {
+      display: none;
+      margin-top: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+    }
+    img.responsive {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="ScaleUp Partners Logo">
-    </header>
-    <section class="hero">
-        <h1>Helping HealthTech Firms Scale</h1>
-        <p>At ScaleUp Partners, we specialize in helping HealthTech and Telehealth companies grow faster, smarter, and more profitably with AI-driven strategies.</p>
-        <a href="https://calendly.com/simone-thescaleuppartners/30min" class="button">Book a Free Strategy Call</a>
-    </section>
 
-    <section class="section">
-        <h2>Meet the Founder</h2>
-        <img src="simone-patel.png" alt="Simone Patel">
-        <p>Simone Patel founded ScaleUp Partners after running a successful business supplying ICU and theater consumables to hospitals across Africa. She noticed a gap in how HealthTech firms used AI and data to scale, and launched ScaleUp Partners to close that gap. Today, she helps founders grow their client base, revenue, and profitability through smart tools and strategic consulting.</p>
-    </section>
+<header>
+  <img src="your-blue-logo.png" alt="ScaleUp Logo">
+</header>
 
-    <section class="section mission">
-        <h2>Our Mission</h2>
-        <p>At ScaleUp Partners, our mission is to empower HealthTech and Telehealth companies to grow smarter, faster, and more profitably. We harness the power of AI, data-driven strategy, and proven growth frameworks to help founders and teams scale sustainably — building businesses that make a meaningful impact on healthcare and the world.</p>
-    </section>
+<div class="section">
+  <img src="your-blue-logo.png" alt="Blue Symbol" class="responsive">
+</div>
 
-    <section class="section why-join">
-        <h2>Why Should You Join Us?</h2>
-        <h3>Guaranteed Growth</h3>
-        <p>We’re so confident in our ability to drive measurable results that we offer a bold guarantee: we’ll double your investment within 12 months — and if we don’t, we’ll continue working with you at no extra cost until we do.</p>
-        <img src="growth-graph.png" alt="Growth Graph">
-    </section>
+<div class="banner">Meet the Founder</div>
+<div class="section">
+  <img src="simone-patel.png" alt="Founder" class="founder-img">
+</div>
 
-    <section class="section testimonials">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial">
-            <strong>★★★★★ - Albergo Ltd</strong>
-            <p>"Working with ScaleUp Partners completely transformed our outreach and revenue strategy. We saw a 65% increase in qualified leads and doubled our monthly profitability in under 90 days. Simone’s team over-delivered on every promise. Highly recommended!"</p>
-        </div>
-        <div class="testimonial">
-            <strong>★★★★★ - Medicure Limited</strong>
-            <p>"Our team was struggling to grow beyond our existing hospital contracts. ScaleUp Partners helped us build a B2B acquisition funnel using AI and data insights. Our client base expanded across 3 countries, and our ROI jumped by 120%. Exceptional service and clear results."</p>
-        </div>
-    </section>
+<a href="https://calendly.com/simone-thescaleuppartners/30min" class="button">Book a Free Strategy Call</a>
 
-    <footer>
-        <p>Contact us: <a href="mailto:simone@thescaleuppartners.com">simone@thescaleuppartners.com</a> | www.thescaleuppartners.com</p>
-    </footer>
+<div class="banner">Guaranteed Growth</div>
+<div class="section">
+  <p>We’re so confident in our ability to drive measurable results that we offer a bold guarantee: we’ll double your investment within 12 months — and if we don’t, we’ll continue working with you at no extra cost until we do.</p>
+</div>
+
+<div class="banner">Testimonials</div>
+<div class="section testimonials">
+  <strong>Albergo Limited</strong><br>
+  <span class="stars">★★★★★</span><br>
+  “Working with ScaleUp Partners completely transformed our outreach and revenue strategy. We saw a 65% increase in qualified leads and doubled our monthly profitability in under 90 days. Simone’s team over-delivered on every promise. Highly recommended!”<br><br>
+  <strong>Medicure Limited</strong><br>
+  <span class="stars">★★★★★</span><br>
+  “Our team was struggling to grow beyond our existing hospital contracts. ScaleUp Partners helped us build a B2B acquisition funnel using AI and data insights. Our client base expanded across 3 countries, and our ROI jumped by 120%. Exceptional service and clear results.”
+</div>
+
+<div class="section">
+  <img src="good-to-great-graph.jpeg" alt="Move from Good to Great" class="responsive">
+</div>
+
+<div class="banner">Frequently Asked Questions</div>
+<div class="section faq">
+  <div class="faq-item">
+    <div class="faq-title">1. How do you guarantee results?</div>
+    <div class="faq-answer">We guarantee that you’ll double your investment within 12 months, or we’ll continue working with you at no extra cost until you do.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-title">2. How do you grow your business while growing ours?</div>
+    <div class="faq-answer">Our growth is directly tied to yours. We operate on a partnership model where we only win when you do.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-title">3. What if it doesn’t work?</div>
+    <div class="faq-answer">If we don’t hit the promised results, we’ll stay on board and keep working with you until we deliver.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-title">4. Isn’t email marketing dead?</div>
+    <div class="faq-answer">Not at all. When done right, it remains one of the most powerful lead generation tools available.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-title">5. What does a working relationship look like?</div>
+    <div class="faq-answer">We retain full accountability and collaborate closely. You'll get a proactive, hands-on partner.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-title">6. How much of your time do we get?</div>
+    <div class="faq-answer">As much as it takes. We’re fully committed to hitting the agreed milestones, no excuses.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-title">7. How involved are you in the closure process?</div>
+    <div class="faq-answer">We systemize the closure process from nurturing to negotiation, and scale it with you.</div>
+  </div>
+</div>
+
+<footer>
+  Email: simone@thescaleuppartners.com | Website: www.thescaleuppartners.com
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-title').forEach(item => {
+    item.addEventListener('click', () => {
+      const answer = item.nextElementSibling;
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
 </body>
 </html>
+
+
